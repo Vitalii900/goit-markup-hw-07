@@ -39,7 +39,6 @@ body {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  /* outline: 1px solid tomato; */
 }
 
 /* Хедер */
@@ -55,6 +54,12 @@ body {
 
 /* Навигация */
 
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+  column-gap: 50px;
+}
+
 .site-nav__link {
   position: relative;
 
@@ -68,12 +73,6 @@ body {
   letter-spacing: 0.02em;
 }
 
-.site-nav {
-  display: flex;
-  margin-left: 93px;
-  column-gap: 50px;
-}
-
 .site-nav__link--current {
   color: var(--active-text-color);
 }
@@ -82,7 +81,6 @@ body {
   transform: scale(0);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 
 .site-nav__link--next:hover::after,
 .site-nav__link--next:focus::after {
