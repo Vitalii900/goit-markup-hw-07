@@ -1,0 +1,55 @@
+/* Форма для подписки в футере */
+
+.subscribe__box {
+  display: flex;
+  margin-top: 20px;
+}
+
+.subscribe {
+  margin-left: auto;
+  margin-top: 12px;
+}
+
+.form {
+  margin-right: 12px;
+}
+
+.form__input {
+  display: block;
+  height: 50px;
+  width: 358px;
+  padding: 15px;
+
+  color: $main-background-color;
+
+  background-color: $footer-background-color;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
+.subscribe__button {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  padding-left: 28px;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: transparent;
+
+  color: $text-hero;
+  background-color: $active-text-color;
+
+  cursor: pointer;
+}
+
+.subscribe__text {
+  margin-right: 10px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+}
