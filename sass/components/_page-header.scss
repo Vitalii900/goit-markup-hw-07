@@ -8,6 +8,10 @@
     display: flex;
     align-items: center;
   }
+
+  &__logo {
+    color: $text-logo;
+  }
 }
 
 /* Навигация */
@@ -70,14 +74,10 @@
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-}
 
-.logo__aссent {
-  color: $active-text-color;
-}
-
-.header__logo {
-  color: $text-logo;
+  &__aссent {
+    color: $active-text-color;
+  }
 }
 
 /* Cсылки контактов хедера */

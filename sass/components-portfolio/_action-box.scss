@@ -3,11 +3,6 @@
   overflow: hidden;
 }
 
-.cards__link:hover .hidden-box::before,
-.cards__link:focus .hidden-box::before {
-  transform: translateY(-100%);
-}
-
 .hidden-box::before {
   position: absolute;
   left: 0;
@@ -21,6 +16,11 @@
   height: 100%;
 
   background-color: rgba(33, 150, 243, 0.9);
+
+  .cards__link:hover &,
+  .cards__link:focus & {
+    transform: translateY(-100%);
+  }
 }
 
 .hidden-box__text {
@@ -42,9 +42,9 @@
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
-}
-
-.cards__link:hover .hidden-box__text,
-.cards__link:focus .hidden-box__text {
-  transform: translate(-50%) translateY(-100%);
+  
+  .cards__link:hover &,
+  .cards__link:focus & {
+    transform: translate(-50%) translateY(-100%);
+  }
 }
